@@ -1,0 +1,88 @@
+.item-details-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+.item-details-container {
+  width: 90%;
+  margin: 50px auto;
+
+  display: flex;
+  gap: 50px;
+
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+}
+
+.item-image-section {
+  width: 50%;
+}
+
+.item-image-section img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.item-info-section {
+  width: 50%;
+}
+
+.item-info-section h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 35px;
+  color: #16a34a;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.status {
+  width: fit-content;
+  background: #dcfce7;
+  color: #16a34a;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-bottom: 25px;
+}
+
+.description {
+  color: #555;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.request-btn {
+  padding: 16px 35px;
+  border: none;
+  border-radius: 12px;
+  background: #16a34a;
+  color: white;
+  font-size: 16px;
+}
+
+.wishlist-btn {
+  padding: 16px 35px;
+  border: 2px solid #16a34a;
+  border-radius: 12px;
+  background: white;
+  color: #16a34a;
+  font-size: 16px;
+}

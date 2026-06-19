@@ -1,0 +1,27 @@
+.categories {
+  width: 90%;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 45px;
+  margin-bottom: 50px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.category-card {
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.category-card h3 {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,37 @@
+import jwt from "jsonwebtoken";
+import tokenBlacklistModel from "../models/blacklist.model.js";
+
+const authUser = async (req, res, next) => {
+  try {
+    const authHeader = req.headers.authorization;
+
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+      return res.status(401).json({
+        message: "Token not provided"
+      });
+    }
+
+    const token = authHeader.split(" ")[1];
+
+    const isTokenBlacklisted = await tokenBlacklistModel.findOne({ token });
+
+    if (isTokenBlacklisted) {
+      return res.status(401).json({
+        message: "Token is invalid"
+      });
+    }
+
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+    req.user = decoded;
+
+    next();
+
+  } catch (err) {
+    return res.status(401).json({
+      message: "Invalid token"
+    });
+  }
+};
+
+export { authUser };

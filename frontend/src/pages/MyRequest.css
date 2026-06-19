@@ -1,0 +1,94 @@
+.my-requests-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding-bottom: 60px;
+}
+
+.my-requests-container {
+  width: 90%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.my-requests-container h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.my-requests-container p {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+
+/* GRID */
+
+.requests-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 30px;
+}
+
+
+/* CARD */
+
+.request-card {
+  background: white;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.request-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.request-info {
+  padding: 25px;
+}
+
+.request-info h2 {
+  margin-bottom: 15px;
+}
+
+.price {
+  color: #16a34a;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+
+/* CONTACT */
+
+.contact-box {
+  margin-top: 20px;
+
+  background: #dcfce7;
+
+  padding: 18px;
+
+  border-radius: 14px;
+}
+
+
+/* EMPTY */
+
+.empty-requests {
+  width: 100%;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.empty-requests h2 {
+  color: #666;
+}

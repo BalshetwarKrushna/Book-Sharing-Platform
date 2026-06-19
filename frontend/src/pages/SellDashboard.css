@@ -1,0 +1,171 @@
+.sell-dashboard {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding-bottom: 60px;
+}
+
+
+/* CONTAINER */
+
+.sell-container {
+  width: 60%;
+  margin: 50px auto;
+
+  background: white;
+
+  padding: 50px;
+
+  border-radius: 25px;
+
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+
+/* HEADER */
+
+.sell-container h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.sell-container p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+
+/* FORM */
+
+.sell-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+
+/* INPUTS */
+
+.sell-container input,
+.sell-container textarea,
+.sell-container select {
+  width: 100%;
+
+  padding: 18px 20px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 14px;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: 0.3s;
+
+  background: #fafafa;
+}
+
+
+.sell-container textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+
+/* FOCUS EFFECT */
+
+.sell-container input:focus,
+.sell-container textarea:focus,
+.sell-container select:focus {
+  border-color: #16a34a;
+  background: white;
+}
+
+
+/* FILE INPUT */
+
+.sell-container input[type="file"] {
+  padding: 14px;
+  background: white;
+}
+
+
+/* BUTTON */
+
+.sell-container button {
+  width: 100%;
+
+  padding: 18px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: #16a34a;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+.sell-container button:hover {
+  background: #15803d;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+
+  .sell-container {
+    width: 75%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .sell-container {
+    width: 90%;
+    padding: 35px;
+  }
+
+  .sell-container h1 {
+    font-size: 36px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .sell-container {
+    width: 95%;
+    padding: 25px;
+  }
+
+  .sell-container h1 {
+    font-size: 30px;
+  }
+
+  .sell-container input,
+  .sell-container textarea {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  .sell-container button {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+}

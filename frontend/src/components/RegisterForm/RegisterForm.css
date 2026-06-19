@@ -1,0 +1,135 @@
+.register-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.register-card {
+  width: 1200px;
+  min-height: 750px;
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+}
+
+/* LEFT */
+
+.register-left {
+  width: 50%;
+  background: #f9fbfd;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.logo span {
+  color: #16a34a;
+}
+
+.register-left h1 {
+  font-size: 60px;
+  line-height: 75px;
+  margin-bottom: 25px;
+}
+
+.register-left h1 span {
+  color: #16a34a;
+}
+
+.register-left p {
+  font-size: 20px;
+  color: #555;
+  line-height: 35px;
+  margin-bottom: 40px;
+}
+
+.register-left img {
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+.features {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.features div {
+  background: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* RIGHT */
+
+.register-right {
+  width: 50%;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-right h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.register-right p {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.register-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.register-right input {
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.register-right input:focus {
+  outline: none;
+  border: 1px solid #16a34a;
+}
+
+.register-right button {
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  background: #16a34a;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.login-link {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.login-link span {
+  color: #16a34a;
+  font-weight: bold;
+  cursor: pointer;
+}
